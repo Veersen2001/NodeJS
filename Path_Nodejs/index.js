@@ -67,6 +67,6 @@ console.log('Relative Path>',path.relative('/home/user/config','/home/user/js'))
 // same as __filename(current file path)
 console.log(' path>:',path.resolve());
 
-// Path Normalize
-console.log('Normalize path',path.normalize('\\home//user//js\\\dfjf'));
+// if any path to make normalize form then used normalize() function
+console.log('Normalize path',path.normalize('\\home//user//js\\dfjf'));
 // output:\home\user\js\dfjf
