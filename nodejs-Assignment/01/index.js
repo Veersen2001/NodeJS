@@ -1,6 +1,9 @@
 const fs = require('fs');
 const os = require('os');
 
+/*  Q.2  In the same project directory created in the above assignment, your task is to create a new file index&js and 
+using the fs module add information about Node&js architecture to a new file nodejs_architecture&txt& Below 
+are the expected files in the project folder */
 const content = "Node.js is a plaform that utilizes Javascript and is primarily employed for developing web applications that are highly focused on input or output operations, including but not limited to chat applications and multimedia streaming websites."
 
 // writing the file
@@ -14,6 +17,7 @@ const content = "Node.js is a plaform that utilizes Javascript and is primarily 
     }
 }) 
 
+// Q.3
 // reading the data from file nodejs_architecture
 fs.readFile('nodejs_architecture.txt',(err,data)=>{
     if(err)
