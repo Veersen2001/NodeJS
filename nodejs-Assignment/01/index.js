@@ -1,10 +1,13 @@
 const fs = require('fs');
 const os = require('os');
 
+/*  Q.2  In the same project directory created in the above assignment, your task is to create a new file index&js and 
+using the fs module add information about Node&js architecture to a new file nodejs_architecture&txt& Below 
+are the expected files in the project folder */
 const content = "Node.js is a plaform that utilizes Javascript and is primarily employed for developing web applications that are highly focused on input or output operations, including but not limited to chat applications and multimedia streaming websites."
 
 // writing the file
-/* fs.writeFile('nodejs_architecture.txt',content,(err)=>{
+ fs.writeFile('nodejs_architecture.txt',content,(err)=>{
     if(err)
     {
         console.log('Error is writing in file');
@@ -12,10 +15,11 @@ const content = "Node.js is a plaform that utilizes Javascript and is primarily 
     else{
         console.log("Successfully");
     }
-}) */
+}) 
 
+// Q.3
 // reading the data from file nodejs_architecture
-/* fs.readFile('nodejs_architecture.txt',(err,data)=>{
+fs.readFile('nodejs_architecture.txt',(err,data)=>{
     if(err)
     {
         console.log('error in reading file',err);
@@ -25,11 +29,13 @@ const content = "Node.js is a plaform that utilizes Javascript and is primarily 
         console.log(data.toString());
     }
 
-}) */
+}) 
 
 
 // appending and reading data from file
-/* const append_data = "First of all, Node.js is a lightweight runtime. It uses an asynchronous, event-driven I/O model which ensures that almost no function in Node.js directly performs I/O. This time-saving operation cuts down the time developers spend on deploying an application.Node.js offers both client-side and server-side in JavaScript. It means that applications written in Node.js require fewer files and less code as developers can reuse it for the frontend and backend parts of an application. As a result, your development team delivers faster results and you can cut down on personnel hours by hiring a team of full-stack developers — instead of separately bringing on a frontend and backend developer(s).The fact that Node.js is powered by the V8 engine by Google Chrome is beneficial itself. It compiles JavaScript to machine code before executing it which results in faster development. Google makes significant investments in the V8 engine improving its efficiency and security, which is why developers have more chances to deploy stable and high-performance applications."
+ const append_data = "First of all, Node.js is a lightweight runtime. It uses an asynchronous, 
+     event-driven I/O model which ensures that almost no function in Node.js directly performs I/O. This time-saving operation 
+     cuts down the time developers spend on deploying an application.Node.js offers both client-side and server-side in JavaScript. It means that applications written in Node.js require fewer files and less code as developers can reuse it for the frontend and backend parts of an application. As a result, your development team delivers faster results and you can cut down on personnel hours by hiring a team of full-stack developers — instead of separately bringing on a frontend and backend developer(s).The fact that Node.js is powered by the V8 engine by Google Chrome is beneficial itself. It compiles JavaScript to machine code before executing it which results in faster development. Google makes significant investments in the V8 engine improving its efficiency and security, which is why developers have more chances to deploy stable and high-performance applications."
 
 fs.appendFile('nodejs_architecture.txt',append_data,(err)=>{
     if(err)
@@ -50,10 +56,10 @@ fs.appendFile('nodejs_architecture.txt',append_data,(err)=>{
         
         
     } 
-})*/
+})
 
 // delete the file
-/* fs.unlink('nodejs_architecture.txt', (err)=>{
+ fs.unlink('nodejs_architecture.txt', (err)=>{
     if(err)
     {
         console.log('error in deleting file');
@@ -62,18 +68,18 @@ fs.appendFile('nodejs_architecture.txt',append_data,(err)=>{
     else{
         console.log('file deleted successfully');
     }
-}) */
+}) 
 
 // print the os name
-// console.log("Operating System Name:"+os.hostname());
+ console.log("Operating System Name:"+os.hostname());
 
 // print the os-release
 
-// console.log("OS release:" +os.release());
+ console.log("OS release:" +os.release());
 
 // create HTTP server
 
-/* const http = require('http');
+const http = require('http');
 
 
 const server = http.createServer((req,res)=>{
@@ -84,7 +90,7 @@ const server = http.createServer((req,res)=>{
     res.end();
 })
 server.listen(5000);
-console.log('the http server is running in port 5000'); */
+console.log('the http server is running in port 5000'); 
 
 // emit: is used to trigger an event
 // on: is used to add a callback function that's going to be executed when the event is triggered
